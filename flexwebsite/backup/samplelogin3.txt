@@ -1,0 +1,82 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="studentlogin.aspx.cs" Inherits="studentlogin" StyleSheetTheme="" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" /><!-- stylesheet for loginpage-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    <style>
+        body {
+            font-family: 'Comic Neue', cursive
+        }
+        #Text1 {
+            width: 398px;
+        }
+        .sign-up-form {
+    /*Creating width */
+    width: 400px;
+    /*Creating a box shadow by adjusting it with colour theme outline*/
+    box-shadow: 0 0 3px 0 lightblue;
+    /*Background colour for the form*/
+    background: #ffffff; /*White*/
+    padding: 20px; /*Creating spaces*/
+    margin: 8% auto; /*Creating the margin by from the top by 8% and rest of them are auto */
+    text-align: center;
+}
+    /*Adjusting the sign form header 1*/
+    .sign-up-form h1 {
+        /*Changing the colour front to adjust with the background*/
+        color: Background;
+        /*Creating the margin bottom by 30px to create space*/
+        margin-bottom: 30px;
+    }
+
+.input-box {
+    /*Creating border radius by 20px*/
+    border-radius: 20px;
+    /*Creating spaces by 10px*/
+    padding: 10px;
+    /*creating the margrin from top is 10 and right is zero*/
+    margin: 10px 0;
+    /*Making the width inorder to extend by 90*/
+    width: 90%;
+    /*Creating the border line lightblue for input */
+    border: 1px solid lightblue;
+}
+
+    </style>
+ 
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <h2 class="text-center">Welcome Student</h2>
+            <div class="row justify-content-center">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="input_username">Username</label>
+                        <input id="input_username" type="text" class="form-control">
+                    </div>
+                    <div class="sign-up-form">
+                        <formview>
+                            <label for="input_password">Password</label>
+                        <input id="input_password" type="password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="Login">Login</button>
+                        </formview>
+                        
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+</html>

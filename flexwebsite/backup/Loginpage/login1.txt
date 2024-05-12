@@ -1,0 +1,65 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="studentlogin.aspx.cs" Inherits="studentlogin" StyleSheetTheme="" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" /><!-- stylesheet for loginpage-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    <style>
+        body {
+            font-family: 'Comic Neue', cursive;
+        }
+        #Text1 {
+            width: 398px;
+        }
+        .sign-up-form {
+            width: 400px;
+            box-shadow: 0 0 3px 0 lightblue;
+            background: #ffffff;
+            padding: 20px;
+            margin: 8% auto;
+            text-align: center;
+        }
+        .sign-up-form h1 {
+            color: Background;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .input-box {
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 90%;
+            border: 1px solid lightblue;
+        }
+    </style>
+ 
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-6">
+                    <div class="sign-up-form">
+                        <h1 class="text-center">Welcome Student</h1>
+                        <label for="input_username" class="input-box">Username </label>
+                        <input id="input_username" type="text" class="input-box">
+                        <label for="input_password" class="input-box">Password</label>
+                        <input id="input_password" type="password" class="input-box">
+                        <p><span><input type="checkbox"></span>I agree to the terms of services</p>
+                        <button type="submit" class="input-box" id="Login">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

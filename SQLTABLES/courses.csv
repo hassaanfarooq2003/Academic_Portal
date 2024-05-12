@@ -1,0 +1,11 @@
+COURSE_CODE,COURSE_NAME,CRED_HRS,PRE_REQ_ID
+CS101,Introduction to Computer Science,3,
+CS201,Data Structures and Algorithms,3,CS101
+SE101,Software Engineering Fundamentals,3,
+SE301,Software Quality Assurance,3,SE101
+AI101,Artificial Intelligence Fundamentals,3,
+AI201,Machine Learning,3,AI101
+DS302,Data Warehousing and Data Mining,3,DS201
+DS401,Big Data Analytics,3,DS302
+MATH101,Calculus I,3,
+MATH201,Calculus II,3,MATH101
